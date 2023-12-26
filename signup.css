@@ -1,0 +1,141 @@
+:root {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  font-family: "inter", Arial, Helvetica, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5em 1em;
+}
+a {
+  text-decoration: none;
+}
+svg {
+  vertical-align: middle;
+}
+img {
+  max-width: 100%;
+}
+.sign {
+  display: flex;
+  align-items: center;
+}
+.sign-grid {
+  padding: 0 1em;
+}
+.sitename {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.form-control label {
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+.form-control input {
+  padding: 1em 2em;
+  font-family: "inter", sans-serif;
+  font-size: 1rem;
+  color: hsl(0, 0%, 66%);
+  outline: 0;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  width: 100%;
+}
+.form-control {
+  margin-bottom: 1.2rem;
+}
+.passhide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  padding: 0 1em 0 0;
+}
+.passhide input {
+  border: 0;
+}
+.check input {
+  float: left;
+  margin-right: 0.5rem;
+}
+.check p {
+  overflow: auto;
+}
+.page-link {
+  color: hsl(258, 83%, 45%);
+  font-weight: bold;
+  border-bottom: 2px solid hsl(258, 83%, 45%);
+  white-space: nowrap;
+  display: inline-block;
+}
+.btn {
+  padding: 1em 1.5em;
+  background-color: hsl(258, 83%, 45%);
+  font-family: "inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  width: 100%;
+  margin: 1rem 0;
+}
+.account {
+  text-align: center;
+  margin: 0;
+}
+.account a {
+  color: hsl(258, 83%, 45%);
+}
+.sign-slider {
+  display: none;
+}
+@media (min-width: 800px) {
+  .sign-grid {
+    padding: 0 4rem;
+  }
+  .sign-slider {
+    background-color: hsl(258, 83%, 45%);
+    padding: 7em 4em;
+    display: block;
+    flex: 1;
+  }
+  .sign-grid {
+    flex: 1;
+  }
+  .slider__header {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0.8rem 0;
+  }
+  .slider__text {
+    color: hsl(255, 90%, 92%);
+    margin: 0;
+  }
+  .slider-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .slider {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+  }
+  .active {
+    background-color: #fff;
+  }
+  .inactive {
+    background-color: hsl(255, 100%, 76%);
+  }
+}

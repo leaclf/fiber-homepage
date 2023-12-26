@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <div class="sign">
+        <div class="sign-grid">
+            <form class="sign-content">
+                <div class="sitename">Fiber</div>
+                <h1 class="form__header">Create your Fiber account</h1>
+                <div class="form-control">
+                    <div><label for="name">Your Name</label></div>
+                    <input type="text" name="username" id="name" placeholder="John Doe">
+                </div>
+                <div class="form-control">
+                    <div><label for="mail">Email</label></div>
+                    <input type="email" name="e-mail" id="mail" placeholder="john@example.com">
+                </div>
+                <div class="form-control">
+                    <div><label for="pass">Password</label></div>
+                    <div class="passhide"><input type="password" name="passwd" id="pass"
+                            placeholder="At least 8 characters ">
+                        <img src="hide password.svg" alt="">
+                    </div>
+                </div>
+                <div class="check"><input type="checkbox" name="check" id="check">
+                    <p>By creating an account on Fiber,
+                        you agree to the <a href="#" class="page-link">
+                            Terms &
+                            Conditions.
+                        </a></p>
+                </div>
+                <button class="btn">Create Fiber Account</button>
+                <p class="account">Already have an account? <a href="#">Sign in</a></p>
+            </form>
+        </div>
+        <div class="sign-slider">
+            <div class="image-container">
+                <img src="Sign Up Image.png" alt="" class="sign__image">
+            </div>
+            <h2 class="slider__header">Unparalleled Templates</h2>
+            <p class="slider__text">Crafted by a team of professional designers, our
+                templates are eunparalleled in the market.
+            </p>
+            <div class="slider-container">
+                <div class="slider active"></div>
+                <div class="slider inactive"></div>
+                <div class="slider inactive"></div>
+                <div class="slider inactive"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
